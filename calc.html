@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <input type="number" id="op1" name="" value="">
+      <input type="number" id="op2" name="" value="">
+      <link rel="shortcut icon" href="favicon.ico">
+    </form>
+  </body>
+</html> -->
+
+
+<html>
+   <head>
+     <title>Calculator</title>
+     <link rel="stylesheet" href="index.css">
+   </head>
+   <body>
+      <form class="form" id="calculator">
+         <table>
+            <tr>
+               <td colspan="4">
+                  <input type=" number" name="display" id="display" disabled>
+               </td>
+            </tr>
+            <tr>
+               <td><input type="button" name="one" value="1" onclick="append(1)"></td>
+               <td><input type="button" name="two" value="2" onclick="append(2)"></td>
+               <td><input type="button" name="three" value="3" onclick="append(3)"></td>
+               <td><input type="button" name="plus" value="+" onclick="append('+')"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="four" value="4" onclick="append(4)"></td>
+               <td><input type="button" name="five" value="5" onclick="append(5)"></td>
+               <td><input type="button" name="six" value="6" onclick="append(6)"></td>
+               <td><input type="button" name="minus" value="-" onclick="append('-')"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="seven" value="7" onclick="append(7)"></td>
+               <td><input type="button" name="eight" value="8" onclick="append(8)"></td>
+               <td><input type="button" name="nine" value="9" onclick="append(9)"></td>
+               <td><input type="button" name="times" value="x" onclick="append('*')"></td>
+            </tr>
+            <tr>
+               <td><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
+               <td><input type="button" name="zero" value="0" onclick="append(0)"></td>
+               <td><input type="button" name="doit" value="=" onclick="result()"></td>
+               <td><input type="button" class="operator" name="div" value="/" onclick="append('/')"></td>
+            </tr>
+         </table>
+      </form>
+      <script type="text/javascript" src="calc.js">
+
+      </script>
+   </body>
+
+</html>
